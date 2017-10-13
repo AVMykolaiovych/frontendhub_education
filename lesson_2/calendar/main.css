@@ -1,0 +1,110 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+*:focus {
+    outline: none
+}
+body, html {
+    height: 100%
+}
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1;
+    font-family: Arial, Helvetica, san-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    height: auto;
+    background: #37475e;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+    color: #aeaeae
+}
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #4a4a4a
+}
+.calendar {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+.calendar__header {
+    background: #fc7779;
+    border: 1px solid #fc7779;
+    width: 100%;
+}
+.calendar__header-previous,
+.calendar__header-next {
+    display: inline-block;
+    font-size: 25px;
+    color: #838383;
+    margin: 0 30px;
+}
+.calendar__header-heading {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    user-select: none;
+}
+.calendar__date {
+    list-style-type: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+}
+.calendar__date:nth-of-type(6) {
+    border-bottom: 1px solid #a9a9a9;
+}
+.calendar__date:nth-of-type(1) {
+    border-top: 1px solid #a9a9a9;
+}
+.calendar__date:nth-of-type(1) > .calendar__date-item {
+    font-weight: 700;
+    font-style: normal;
+}
+.calendar__date-link.not-active {
+    color: #aeaeae;
+}
+.calendar__date-item{
+    display: inline-block;
+    width: 14.285714%;
+    font-size: 16px;
+    font-style: italic;
+    border: 1px solid #a9a9a9;
+    color: black;
+}
+.calendar__date-link {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    color: #000;
+}
+.calendar__date-link:hover,
+.calendar__date-link:focus {
+    color: #fff;
+    background: #fc7779;
+    border: 1px solid #fc7779;
+}
+.calendar__date-link:hover,
+.calendar__date-link:focus .calendar__date-item {
+    border: none;
+}

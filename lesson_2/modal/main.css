@@ -1,0 +1,104 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+*:focus {
+    outline: none
+}
+body, html {
+    height: 100%
+}
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1;
+    font-family: Arial, Helvetica, san-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    height: auto;
+    background: #29333f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    display: inline-block;
+    width: 150px;
+    color: #fff;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all .4s ease;
+}
+.main {
+    max-width: 630px;
+    margin: 0 auto;
+}
+.modal-form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -15px 15px 0  #1a2128;
+    -moz-box-shadow: -15px 15px 0  #1a2128;
+    -webkit-box-shadow: -15px 15px 0  #1a2128;
+    -o-box-shadow: -15px 15px 0  #1a2128;
+}
+.modal-form__header {
+    width: 100%;
+    border-bottom: 2px solid #ecf0f1;
+    text-align: left;
+    padding: 25px;
+}
+.modal-form__header-heading {
+    color: #34495e;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+.modal-form__body {
+    padding: 20px 25px;
+    color: #34495e;
+    line-height: 1.8;
+    user-select: none;
+}
+.modal-form__body-text-description {
+    color: #1abc9c;
+}
+.modal-form__footer {
+    background: #ecf0f1;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+}
+.modal-form__footer-button-ok {
+    background: #bdc3c7;
+    margin-right: 10px;
+}
+.modal-form__footer-button-ok:hover {
+    background: #a1aab0;
+    box-shadow: inset 0 0 3px 0 #939da4;
+}
+.modal-form__footer-button-off {
+    background: #1abc9c;
+}
+.modal-form__footer-button-off:hover {
+    background: #148f77;
+    box-shadow: inset 0 0 3px 0 #148f77;
+}
