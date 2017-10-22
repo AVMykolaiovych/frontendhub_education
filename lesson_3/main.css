@@ -1,6 +1,7 @@
 body, html {
+	margin: 0;
     height: 100%;
-    min-height: 100vh;
+    min-height: 100%;
 }
 html {
     font-size: 16px;
@@ -11,7 +12,6 @@ html {
     overflow-x: hidden;
     height: auto;
     background: #e1e7ed;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +93,7 @@ html {
 }
 .quote {
 	background: transparent;
+	margin-bottom: 95px;
 }
 .quote__box-left {
 	display: inline-block;
@@ -104,6 +105,10 @@ html {
 	height: 264px;
 	background: #fff;
 	margin-left: -4px;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 20px 26px;
+	font-size: 15px;
 }
 .quote_box-main::before {
     content: ' ';
@@ -150,11 +155,49 @@ html {
 	border-bottom: 1px solid transparent;
 }
 .quote__box-inner-image {
-	display: block;
+	display: inline-block;
 }
 .quote__box-right-caption {
 	display: block;
 }
 *.quote__box-right-inner > div {
 	display: inline-block;
+	transform: translateY(80%);
 }
+.quote_box-main-heading {
+	text-transform: uppercase;
+	color: #33363b;	
+	margin-bottom: 40px;
+	position: relative;
+}
+.quote_box-main-heading::after {
+    content: ' ';
+    width: 40px;
+    position: absolute;
+    display: block;
+    height: 2px;
+    left: 0;
+    top: 37px;
+    background: #ff7098;
+}
+.quote_box-main-subheading {
+	color: #868d9b;
+	line-height: 1.4;
+	padding-bottom: 5px;
+}
+.quote_box-main-wrap {
+	display: inline-block;
+	width: 100%;
+}
+.quote_box-main-wrap span {
+	position: relative;
+	top: -14px;
+	left: 10px;
+}
+.quote_box-main-wrap img:last-of-type {
+	margin-left: 160px;
+	position: relative;
+	top: -12px;
+	left: 10px;
+}
+
